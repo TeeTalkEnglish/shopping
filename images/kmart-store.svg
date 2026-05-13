@@ -1,0 +1,27 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kmart store illustration">
+  <defs>
+    <linearGradient id="roof" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d30000"/>
+      <stop offset="100%" stop-color="#a00000"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#b8d4f7" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#eef4fb" />
+  <rect x="100" y="180" width="1000" height="420" rx="24" ry="24" fill="#f8fafc" stroke="#cbd5e1" stroke-width="6" />
+  <rect x="100" y="180" width="1000" height="120" rx="24" ry="24" fill="url(#roof)" />
+  <text x="600" y="260" font-family="Arial, Helvetica, sans-serif" font-size="96" fill="#ffffff" font-weight="800" text-anchor="middle">Kmart</text>
+  <rect x="180" y="310" width="820" height="220" rx="12" ry="12" fill="url(#glass)" stroke="#93c5fd" stroke-width="4" />
+  <rect x="260" y="380" width="140" height="120" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="4" />
+  <rect x="450" y="380" width="140" height="120" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="4" />
+  <rect x="640" y="380" width="140" height="120" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="4" />
+  <rect x="830" y="380" width="140" height="120" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="4" />
+  <circle cx="520" cy="530" r="28" fill="#d30000" />
+  <circle cx="620" cy="530" r="28" fill="#d30000" />
+  <text x="520" y="537" font-family="Arial, Helvetica, sans-serif" font-size="48" fill="#ffffff" font-weight="700" text-anchor="middle">K</text>
+  <text x="620" y="537" font-family="Arial, Helvetica, sans-serif" font-size="48" fill="#ffffff" font-weight="700" text-anchor="middle">M</text>
+  <path d="M 140 620 H 1060" stroke="#d3dce6" stroke-width="14" stroke-linecap="round" />
+  <text x="600" y="720" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#334155" text-anchor="middle">Your local Aussie discount department store</text>
+</svg>
