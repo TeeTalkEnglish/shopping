@@ -1,33 +1,24 @@
-const checkboxes = document.querySelectorAll('.item-check');
-
 const priceInputs = document.querySelectorAll('.price-input');
 
 const totalPrice = document.getElementById('totalPrice');
 
 const budgetMessage = document.getElementById('budgetMessage');
 
-const budgetLimit = 120;
+const budgetLimit = 35;
 
-function updateTotal() {
+function updateTotal(){
 
     let total = 0;
 
-    checkboxes.forEach((box, index) => {
+    priceInputs.forEach(input => {
 
-        if (box.checked) {
-
-            const value =
-                Number(priceInputs[index].value) || 0;
-
-            total += value;
-
-        }
+        total += Number(input.value) || 0;
 
     });
 
     totalPrice.textContent = total.toFixed(2);
 
-    if (total > budgetLimit) {
+    if(total > budgetLimit){
 
         totalPrice.style.color = "red";
 
@@ -36,7 +27,9 @@ function updateTotal() {
 
         budgetMessage.style.color = "red";
 
-    } else {
+    }
+
+    else{
 
         totalPrice.style.color = "green";
 
@@ -48,12 +41,6 @@ function updateTotal() {
     }
 
 }
-
-checkboxes.forEach(box => {
-
-    box.addEventListener('change', updateTotal);
-
-});
 
 priceInputs.forEach(input => {
 

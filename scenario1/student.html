@@ -30,6 +30,8 @@
 
         <p>
             You just arrived in Australia and need groceries for the week.
+            You must ask supermarket staff for help, compare prices,
+            fix shopping mistakes, and stay within your budget.
         </p>
 
         <!-- IMAGE -->
@@ -39,167 +41,335 @@
 
         </div>
 
-  <!-- SHOPPING LIST -->
+        <!-- NOTE -->
+        <div class="note">
+
+            <h3>Shopping Challenge</h3>
+
+            <p>
+                Some products are confusing, expensive, or in the wrong aisle.
+                Staff may speak quickly and use casual Australian English.
+            </p>
+
+            <p>
+                You should ask questions, compare products,
+                and make decisions carefully to stay under budget.
+            </p>
+
+        </div>
+
+     <!-- SHOPPING LIST -->
 <h2>Shopping List</h2>
 
 <div class="table-wrapper">
 
-<table class="shopping-table">
+<table class="shopping-table" id="budgetTable">
 
     <tr>
-        <th>Done</th>
         <th>Item</th>
-        <th>Problem</th>
-        <th>Hard Mode</th>
+        <th>Your Situation</th>
+        <th>You Need To Ask</th>
+        <th>Price ($)</th>
+        <th>Challenge</th>
         <th>Hint</th>
     </tr>
 
-    <!-- ROW 1 -->
+    <!-- BREAD -->
     <tr>
-
-        <td>
-            <input type="checkbox">
-        </td>
 
         <td>
             Bread
         </td>
 
         <td>
-            Wholegrain bread is more expensive.
+            You want healthier bread,
+            but gluten-free bread is expensive.
         </td>
 
         <td>
-            Ask staff for cheaper bread options.
+
+            <ul>
+                <li>Ask which bread is healthiest</li>
+                <li>Ask where gluten-free bread is</li>
+                <li>Ask if there is a cheaper healthy option</li>
+            </ul>
+
         </td>
 
         <td>
+            <input type="number" class="price-input" placeholder="0">
+        </td>
+
+        <td>
+            The healthier bread may push you over budget.
+        </td>
+
+        <td>
+
             <details class="hint-box">
+
                 <summary>Show Hint</summary>
+
                 <div class="hint">
-                    "Can you show me a cheaper loaf, please?"
+
+                    “Where can I find gluten-free bread?”
+                    <br><br>
+
+                    “Which bread is healthier?”
+                    <br><br>
+
+                    “Is there a cheaper healthy option?”
+
                 </div>
+
             </details>
+
         </td>
 
     </tr>
 
-    <!-- ROW 2 -->
+    <!-- MILK -->
     <tr>
-
-        <td>
-            <input type="checkbox">
-        </td>
 
         <td>
             Milk
         </td>
 
         <td>
-            You accidentally picked almond milk.
+            You cannot drink normal milk
+            because dairy hurts your stomach.
         </td>
 
         <td>
-            Ask where normal milk is.
+
+            <ul>
+                <li>Ask for dairy-free milk</li>
+                <li>Ask the difference between almond and oat milk</li>
+                <li>Ask which milk is more popular</li>
+            </ul>
+
         </td>
 
         <td>
+            <input type="number" class="price-input" placeholder="0">
+        </td>
+
+        <td>
+            Dairy-free milk is more expensive.
+        </td>
+
+        <td>
+
             <details class="hint-box">
+
                 <summary>Show Hint</summary>
+
                 <div class="hint">
-                    "I'm looking for regular milk, not almond."
+
+                    “Do you have dairy-free milk?”
+                    <br><br>
+
+                    “What’s the difference between almond and oat milk?”
+                    <br><br>
+
+                    “Which one do most people buy?”
+
                 </div>
+
             </details>
+
         </td>
 
     </tr>
 
-    <!-- ROW 3 -->
+    <!-- RICE -->
     <tr>
-
-        <td>
-            <input type="checkbox">
-        </td>
 
         <td>
             Rice
         </td>
 
         <td>
-            Rice only comes in large bags.
+            You cook rice often,
+            but large bags are heavy and expensive.
         </td>
 
         <td>
-            Ask if there is a smaller size.
+
+            <ul>
+                <li>Ask for smaller rice bags</li>
+                <li>Ask which rice tastes best</li>
+                <li>Ask which rice is cheapest long-term</li>
+            </ul>
+
         </td>
 
         <td>
+            <input type="number" class="price-input" placeholder="0">
+        </td>
+
+        <td>
+            Better-quality rice costs much more.
+        </td>
+
+        <td>
+
             <details class="hint-box">
+
                 <summary>Show Hint</summary>
+
                 <div class="hint">
-                    "Do you have a smaller bag of rice?"
+
+                    “Do you have a smaller bag?”
+                    <br><br>
+
+                    “Which rice tastes better?”
+                    <br><br>
+
+                    “Which one is better value?”
+
                 </div>
+
             </details>
+
         </td>
 
     </tr>
 
-    <!-- ROW 4 -->
+    <!-- CHICKEN -->
     <tr>
-
-        <td>
-            <input type="checkbox">
-        </td>
 
         <td>
             Chicken
         </td>
 
         <td>
-            Chicken is almost over budget.
+            You want healthier chicken,
+            but premium chicken is expensive.
         </td>
 
         <td>
-            Ask about discounts or cheaper meat.
+
+            <ul>
+                <li>Ask the difference between frozen and fresh chicken</li>
+                <li>Ask what free-range means</li>
+                <li>Ask if any chicken is discounted</li>
+            </ul>
+
         </td>
 
         <td>
+            <input type="number" class="price-input" placeholder="0">
+        </td>
+
+        <td>
+            The staff member wants you to decide quickly.
+        </td>
+
+        <td>
+
             <details class="hint-box">
+
                 <summary>Show Hint</summary>
+
                 <div class="hint">
-                    "Is there a cheaper chicken option?"
+
+                    “What’s the difference between these?”
+                    <br><br>
+
+                    “What does free-range mean?”
+                    <br><br>
+
+                    “Is any chicken on special today?”
+
                 </div>
+
             </details>
+
         </td>
 
     </tr>
 
-    <!-- ROW 5 -->
+    <!-- SNACKS -->
     <tr>
-
-        <td>
-            <input type="checkbox">
-        </td>
 
         <td>
             Snacks
         </td>
 
         <td>
-            Special price ended yesterday.
+            You want healthier snacks,
+            but protein bars are expensive.
         </td>
 
         <td>
-            Ask why shelf price is different.
+
+            <ul>
+                <li>Ask which snacks are healthier</li>
+                <li>Ask if the special price still works</li>
+                <li>Ask for cheaper snack options</li>
+            </ul>
+
         </td>
 
         <td>
+            <input type="number" class="price-input" placeholder="0">
+        </td>
+
+        <td>
+            The shelf price is different from checkout price.
+        </td>
+
+        <td>
+
             <details class="hint-box">
+
                 <summary>Show Hint</summary>
+
                 <div class="hint">
-                    "Can you tell me why the price is different?"
+
+                    “Are these still on special?”
+                    <br><br>
+
+                    “Which snack is healthier?”
+                    <br><br>
+
+                    “Do you have cheaper snacks?”
+
                 </div>
+
             </details>
+
+        </td>
+
+    </tr>
+
+    <!-- TOTAL -->
+    <tr class="total-row">
+
+        <td colspan="3">
+
+            <strong>Total Budget Tracker</strong>
+
+        </td>
+
+        <td colspan="3">
+
+            <strong>
+                $<span id="totalPrice">0</span> AUD
+            </strong>
+
+            <br><br>
+
+            Budget:
+            <strong>$35 AUD</strong>
+
+            <br><br>
+
+            <span id="budgetMessage">
+                You are within budget.
+            </span>
+
         </td>
 
     </tr>
@@ -208,11 +378,36 @@
 
 </div>
 
+    </div>
 
+    <!-- SECRET MISSIONS -->
+    <div class="section">
 
-        <p>
-            <strong>Budget:</strong> $35 AUD
-        </p>
+        <h2>Secret Missions</h2>
+
+        <ul>
+
+            <li>
+                Stay under your $35 budget.
+            </li>
+
+            <li>
+                Ask for one cheaper option.
+            </li>
+
+            <li>
+                Fix one shopping mistake confidently.
+            </li>
+
+            <li>
+                Ask staff to repeat one sentence slowly.
+            </li>
+
+            <li>
+                Compare two products before choosing.
+            </li>
+
+        </ul>
 
     </div>
 
@@ -222,121 +417,121 @@
         <h2>Your Goals</h2>
 
         <ol class="goal-list">
-<!-- GOALS SECTION -->
-<div class="section">
 
-    <h2>Your Goals</h2>
+            <!-- GOAL 1 -->
+            <li>
 
-    <ol class="goal-list">
+                Ask where items are
 
-        <!-- GOAL 1 -->
-        <li>
+                <details class="hint-box">
 
-            Ask where items are
+                    <summary>Show Hint</summary>
 
-            <details class="hint-box">
+                    <div class="hint">
 
-                <summary>Show Hint</summary>
+                        “Excuse me, where can I find the bread?”
 
-                <div class="hint">
+                    </div>
 
-                    “Excuse me, where can I find the bread?”
+                </details>
 
-                </div>
+            </li>
 
-            </details>
+            <!-- GOAL 2 -->
+            <li>
 
-        </li>
+                Ask for discounts
 
-        <!-- GOAL 2 -->
-        <li>
+                <details class="hint-box">
 
-            Ask for discounts
+                    <summary>Show Hint</summary>
 
-            <details class="hint-box">
+                    <div class="hint">
 
-                <summary>Show Hint</summary>
+                        “Is this on special?”
+                        <br><br>
 
-                <div class="hint">
+                        “Do you have a cheaper one?”
 
-                    “Is this on special?”
-                    <br><br>
-                    “Do you have a cheaper one?”
+                    </div>
 
-                </div>
+                </details>
 
-            </details>
+            </li>
 
-        </li>
+            <!-- GOAL 3 -->
+            <li>
 
-        <!-- GOAL 3 -->
-        <li>
+                Understand fast English
 
-            Understand fast English
+                <details class="hint-box">
 
-            <details class="hint-box">
+                    <summary>Show Hint</summary>
 
-                <summary>Show Hint</summary>
+                    <div class="hint">
 
-                <div class="hint">
+                        “Sorry, could you say that again?”
+                        <br><br>
 
-                    “Sorry, could you say that again?”
+                        “Can you speak a little slower?”
 
-                </div>
+                    </div>
 
-            </details>
+                </details>
 
-        </li>
+            </li>
 
-        <!-- GOAL 4 -->
-        <li>
+            <!-- GOAL 4 -->
+            <li>
 
-            Fix one shopping mistake
+                Fix one shopping mistake
 
-            <details class="hint-box">
+                <details class="hint-box">
 
-                <summary>Show Hint</summary>
+                    <summary>Show Hint</summary>
 
-                <div class="hint">
+                    <div class="hint">
 
-                    “Sorry, I picked the wrong one.”
-                    <br><br>
-                    “Can I change this?”
+                        “Sorry, I picked the wrong one.”
+                        <br><br>
 
-                </div>
+                        “Can I change this?”
 
-            </details>
+                    </div>
 
-        </li>
+                </details>
 
-        <!-- GOAL 5 -->
-        <li>
+            </li>
 
-            Pay confidently
+            <!-- GOAL 5 -->
+            <li>
 
-            <details class="hint-box">
+                Pay confidently
 
-                <summary>Show Hint</summary>
+                <details class="hint-box">
 
-                <div class="hint">
+                    <summary>Show Hint</summary>
 
-                    “Can I pay by card?”
+                    <div class="hint">
 
-                </div>
+                        “Can I pay by card?”
+                        <br><br>
 
-            </details>
+                        “Do I tap here?”
 
-        </li>
+                    </div>
 
-    </ol>
+                </details>
 
-</div>
+            </li>
 
         </ol>
 
     </div>
 
 </div>
+
+<script src="../js/budget.js"></script>
 
 </body>
 </html>
