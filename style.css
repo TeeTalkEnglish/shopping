@@ -447,3 +447,52 @@ tbody tr:nth-child(even) {
         min-width: 0;
     }
 }
+
+.scenario-image img{
+    width:100%;
+    max-width:700px;
+    border-radius:16px;
+    margin-top:20px;
+}
+
+.shopping-table details summary{
+    cursor:pointer;
+    font-weight:600;
+}
+
+.shopping-table details{
+    min-width:180px;
+}
+
+.total-row{
+    background:#f3f4f6;
+    font-size:18px;
+}
+
+#budgetMessage{
+    font-weight:bold;
+}
+
+.item-check{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+
+.price-input{
+    width:80px;
+    padding:8px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.total-row{
+    background:#f3f4f6;
+    font-size:18px;
+}
+
+#budgetMessage{
+    font-weight:bold;
+}
+
