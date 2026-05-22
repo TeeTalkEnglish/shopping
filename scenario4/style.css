@@ -1,0 +1,343 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#eef5ff;
+  color:#1f2937;
+  line-height:1.6;
+  padding-bottom:60px;
+}
+
+/* TOP BAR */
+
+.topbar{
+  background:linear-gradient(135deg,#3b82f6,#60a5fa);
+  color:white;
+  padding:20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.topbar h1{
+  font-size:28px;
+  font-weight:700;
+}
+
+.budget-box,
+.stress-box{
+  background:rgba(255,255,255,0.15);
+  padding:12px 18px;
+  border-radius:14px;
+  font-weight:bold;
+  backdrop-filter:blur(8px);
+}
+
+/* GENERAL SECTIONS */
+
+section{
+  width:92%;
+  max-width:1300px;
+  margin:28px auto;
+}
+
+/* INTRO CARD */
+
+.intro-card,
+.slang-card,
+.marketplace-card,
+.chat-section,
+.challenge-section,
+.guide-intro,
+.guide-table-section,
+.seller-lines{
+  background:white;
+  border-radius:24px;
+  padding:28px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+h2{
+  margin-bottom:18px;
+  color:#2563eb;
+  font-size:28px;
+}
+
+/* WARNING GRID */
+
+.warning-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+  margin-top:20px;
+}
+
+.warning{
+  background:#dbeafe;
+  padding:16px;
+  border-radius:16px;
+  font-size:15px;
+  font-weight:600;
+}
+
+/* TABLES */
+
+.table-wrapper{
+  overflow-x:auto;
+  margin-top:20px;
+}
+
+table{
+  width:100%;
+  min-width:1100px;
+  border-collapse:collapse;
+}
+
+th{
+  background:#3b82f6;
+  color:white;
+  padding:16px;
+  text-align:left;
+  font-size:15px;
+}
+
+td{
+  padding:16px;
+  border-bottom:1px solid #e5e7eb;
+  vertical-align:top;
+  background:white;
+}
+
+tr:hover td{
+  background:#f8fbff;
+}
+
+/* PRODUCT IMAGES */
+
+.product-img{
+  width:100px;
+  height:100px;
+  object-fit:cover;
+  border-radius:14px;
+  border:3px solid #dbeafe;
+}
+
+/* INPUTS */
+
+.price-input{
+  width:90px;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #cbd5e1;
+  font-size:15px;
+}
+
+/* BUTTONS */
+
+button{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:bold;
+  margin-bottom:8px;
+  transition:0.2s;
+}
+
+button:hover{
+  background:#1d4ed8;
+  transform:translateY(-2px);
+}
+
+.skip-btn{
+  background:#94a3b8;
+}
+
+.skip-btn:hover{
+  background:#64748b;
+}
+
+/* DETAILS */
+
+details{
+  margin-top:10px;
+  background:#eff6ff;
+  border-radius:12px;
+  padding:10px;
+}
+
+summary{
+  cursor:pointer;
+  font-weight:bold;
+  color:#2563eb;
+}
+
+details p{
+  margin-top:10px;
+  font-size:14px;
+  line-height:1.7;
+}
+
+/* CHAT SYSTEM */
+
+.chat-box{
+  background:#f1f5f9;
+  border-radius:22px;
+  padding:24px;
+}
+
+.seller-msg{
+  background:white;
+  padding:14px 18px;
+  border-radius:18px;
+  width:fit-content;
+  max-width:80%;
+  margin-bottom:14px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+  font-size:15px;
+}
+
+.student-options{
+  margin-top:18px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.chat-btn{
+  background:#dbeafe;
+  color:#1e3a8a;
+  border:none;
+  padding:12px 16px;
+  border-radius:14px;
+  font-weight:600;
+}
+
+.chat-btn:hover{
+  background:#bfdbfe;
+}
+
+/* CHALLENGE CARDS */
+
+.challenge-grid,
+.line-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  margin-top:20px;
+}
+
+.challenge-card,
+.line-card{
+  background:#eff6ff;
+  border-radius:18px;
+  padding:20px;
+  font-weight:600;
+  min-height:110px;
+  display:flex;
+  align-items:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* GUIDE TABLE */
+
+.guide-table-section table td{
+  font-size:15px;
+}
+
+.guide-table-section table tr:nth-child(even) td{
+  background:#f8fbff;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .topbar{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .topbar h1{
+    font-size:24px;
+  }
+
+  h2{
+    font-size:24px;
+  }
+
+  .product-img{
+    width:80px;
+    height:80px;
+  }
+
+  button{
+    width:100%;
+  }
+
+  .student-options{
+    flex-direction:column;
+  }
+
+}
+
+@media(max-width:600px){
+
+  section{
+    width:95%;
+  }
+
+  .intro-card,
+  .slang-card,
+  .marketplace-card,
+  .chat-section,
+  .challenge-section,
+  .guide-intro,
+  .guide-table-section,
+  .seller-lines{
+    padding:20px;
+    border-radius:20px;
+  }
+
+  td,
+  th{
+    padding:12px;
+    font-size:14px;
+  }
+
+  .warning{
+    font-size:14px;
+  }
+
+  .challenge-card,
+  .line-card{
+    min-height:auto;
+  }
+
+}
+
+.marketplace-link {
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+}
+
+.marketplace-link a {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.marketplace-link a:hover {
+  text-decoration: underline;
+}

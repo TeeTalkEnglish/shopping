@@ -1,0 +1,601 @@
+<!-- student.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marketplace Survival - Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Facebook Marketplace Survival 🇦🇺</h1>
+  <div class="budget-box">
+    Budget: $<span id="budget">550</span>
+  </div>
+  <div class="stress-box">
+    Stress: <span id="stress">15</span>/100
+  </div>
+</header>
+
+<section class="intro-card">
+  <h2>Your Situation</h2>
+  <p>
+    You just moved into a tiny Melbourne share house.
+    Your room has no furniture. You start work next week.
+    You need to survive Facebook Marketplace without getting scammed,
+    wasting money, or embarrassing yourself in front of your roommates.
+  </p>
+
+  <div class="warning-grid">
+    <div class="warning">⚠️ Some sellers ghost people.</div>
+    <div class="warning">⚠️ Cheap items may smell bad.</div>
+    <div class="warning">⚠️ Some items won’t fit in Uber.</div>
+    <div class="warning">⚠️ Some sellers pressure buyers.</div>
+  </div>
+</section>
+
+<section class="slang-card">
+
+  <h2>Aussie Marketplace Survival Slang 🇦🇺</h2>
+
+  <div class="table-wrapper">
+    <table>
+
+      <tr>
+        <th>Slang</th>
+        <th>Meaning</th>
+        <th>Marketplace Reality</th>
+        <th>Risk Level</th>
+        <th>How Sellers Use It</th>
+        <th>How You Should Respond</th>
+      </tr>
+
+      <tr>
+        <td>sweet as</td>
+        <td>all good / no problem</td>
+        <td>Used to end conversation quickly</td>
+        <td>Low</td>
+        <td>Closes negotiation fast</td>
+        <td>“Still in good condition?”</td>
+      </tr>
+
+      <tr>
+        <td>mate</td>
+        <td>friend / casual address</td>
+        <td>Can be friendly or passive-aggressive</td>
+        <td>Medium</td>
+        <td>Softens pressure or hides impatience</td>
+        <td>“Any issues with it mate?”</td>
+      </tr>
+
+      <tr>
+        <td>no worries</td>
+        <td>it’s fine / don’t stress</td>
+        <td>Often used when seller avoids detail</td>
+        <td>Low</td>
+        <td>Downplays defects</td>
+        <td>“Any damage I should know?”</td>
+      </tr>
+
+      <tr>
+        <td>heaps good</td>
+        <td>very good</td>
+        <td>Can exaggerate quality</td>
+        <td>Medium</td>
+        <td>Oversells used items</td>
+        <td>“How long was it used?”</td>
+      </tr>
+
+      <tr>
+        <td>no holds</td>
+        <td>first come first serve</td>
+        <td>Urgency pressure tactic</td>
+        <td>High</td>
+        <td>Forces fast decisions</td>
+        <td>“Can I pick up in 1 hour?”</td>
+      </tr>
+
+      <tr>
+        <td>pickup only</td>
+        <td>no delivery</td>
+        <td>Transport burden on buyer</td>
+        <td>Medium</td>
+        <td>Shifts cost to you</td>
+        <td>“Is it heavy to carry?”</td>
+      </tr>
+
+      <tr>
+        <td>need gone ASAP</td>
+        <td>urgent sale</td>
+        <td>Often used to push quick buy</td>
+        <td>High</td>
+        <td>Creates fake urgency</td>
+        <td>“Why are you selling it?”</td>
+      </tr>
+
+      <tr>
+        <td>still available?</td>
+        <td>checking if item exists</td>
+        <td>Standard first message</td>
+        <td>Low</td>
+        <td>Mass buyer messages</td>
+        <td>Ask condition immediately</td>
+      </tr>
+
+      <tr>
+        <td>firm price</td>
+        <td>no negotiation</td>
+        <td>Seller control tactic</td>
+        <td>Medium</td>
+        <td>Blocks bargaining</td>
+        <td>Decide fast or walk away</td>
+      </tr>
+
+      <tr>
+        <td>bit worn</td>
+        <td>used condition</td>
+        <td>Hides real damage level</td>
+        <td>High</td>
+        <td>Downplays defects</td>
+        <td>“Any cracks or damage?”</td>
+      </tr>
+
+    </table>
+  </div>
+
+</section>
+
+<section class="slang-card">
+  <h2>Aussie Marketplace Slang</h2>
+  <div class="marketplace-link">
+  <a href="https://www.facebook.com/marketplace/melbourne/search/?query=steel%20toe%20work%20boots"
+     target="_blank"
+     rel="noopener noreferrer">
+     🔎 View Real Melbourne Marketplace Listings (Steel Toe Work Boots)
+  </a>
+</div>
+
+
+  <div class="table-wrapper">
+    <table>
+
+      <tr>
+        <th>Item</th>
+        <th>Image</th>
+        <th>Situation</th>
+        <th>Decision Pressure</th>
+        <th>Risk Clues</th>
+        <th>Emergency Outcome</th>
+        <th>Aussie Slang</th>
+        <th>Transport Reality</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+
+      <!-- ===================== BOOTS ===================== -->
+      <tr data-risk="4">
+
+        <td>Steel Toe Work Boots</td>
+
+        <td>
+          <img src="assets/images/products/workboots.jpg" class="product-img">
+        </td>
+
+        <td>
+          10+ hour butcher shifts in cold meat room
+        </td>
+
+        <td>
+          Buy cheap boots or risk injury at work?
+        </td>
+
+        <td>
+          waterproof?<br>
+          smell?<br>
+          worn sole?<br>
+          steel toe damage?
+        </td>
+
+        <td>
+          🚨 Boots leak during cleaning<br>
+          ⚠️ Foot pain after shift
+        </td>
+
+        <td>
+          “sweet as”
+        </td>
+
+        <td>
+          Train + walking (heavy load)
+        </td>
+
+        <td>
+          <input type="number" value="95" class="price-input">
+        </td>
+
+        <td>
+          <button onclick="buyItem(95,18)">Buy</button>
+          <button class="skip-btn">Skip</button>
+
+          <details>
+            <summary>Hint</summary>
+            <p>
+              “Still waterproof?”<br><br>
+              “Any smell inside?”<br><br>
+              “Good for cold room work?”
+            </p>
+          </details>
+        </td>
+
+      </tr>
+
+      <!-- ===================== FRIDGE ===================== -->
+      <tr data-risk="3">
+
+        <td>Mini Fridge</td>
+
+        <td>
+          <img src="assets/images/products/fridge.jpg" class="product-img">
+        </td>
+
+        <td>
+          Meal prep + roommates stealing food
+        </td>
+
+        <td>
+          Cheap noisy fridge or save for better one?
+        </td>
+
+        <td>
+          noise?<br>
+          mould?<br>
+          smell?<br>
+          power use?
+        </td>
+
+        <td>
+          🚨 Fridge stops before work week<br>
+          ⚠️ Meat smell spreads in room
+        </td>
+
+        <td>
+          “mate”
+        </td>
+
+        <td>
+          Uber difficult / no delivery
+        </td>
+
+        <td>
+          <input type="number" value="110" class="price-input">
+        </td>
+
+        <td>
+          <button onclick="buyItem(110,20)">Buy</button>
+          <button class="skip-btn">Skip</button>
+
+          <details>
+            <summary>Hint</summary>
+            <p>
+              “Does it make noise at night?”<br><br>
+              “Any weird smell inside?”<br><br>
+              “Can you help carry it?”
+            </p>
+          </details>
+        </td>
+
+      </tr>
+
+      <!-- ===================== HEADPHONES ===================== -->
+      <tr data-risk="2">
+
+        <td>Noise Cancelling Headphones</td>
+
+        <td>
+          <img src="assets/images/products/headphones.jpg" class="product-img">
+        </td>
+
+        <td>
+          Loud roommates + early butcher shifts
+        </td>
+
+        <td>
+          Sleep properly or save money?
+        </td>
+
+        <td>
+          battery?<br>
+          damage?<br>
+          smell?<br>
+          sound quality?
+        </td>
+
+        <td>
+          🚨 Battery dies on commute<br>
+          ⚠️ Cigarette smell in pads
+        </td>
+
+        <td>
+          “nah yeah”
+        </td>
+
+        <td>
+          Easy train carry
+        </td>
+
+        <td>
+          <input type="number" value="60" class="price-input">
+        </td>
+
+        <td>
+          <button onclick="buyItem(60,10)">Buy</button>
+          <button class="skip-btn">Skip</button>
+        </td>
+
+      </tr>
+
+      <!-- ===================== CONTAINERS ===================== -->
+      <tr data-risk="1">
+
+        <td>Meal Prep Containers</td>
+
+        <td>
+          <img src="assets/images/products/containers.jpg" class="product-img">
+        </td>
+
+        <td>
+          Cheap meal prep for work survival
+        </td>
+
+        <td>
+          Save money or risk leaks at work?
+        </td>
+
+        <td>
+          leak?<br>
+          crack?<br>
+          smell?<br>
+          stain?
+        </td>
+
+        <td>
+          🚨 Soup leaks in work bag<br>
+          ⚠️ Old food smell
+        </td>
+
+        <td>
+          “heaps good”
+        </td>
+
+        <td>
+          Easy carry
+        </td>
+
+        <td>
+          <input type="number" value="20" class="price-input">
+        </td>
+
+        <td>
+          <button onclick="buyItem(20,5)">Buy</button>
+          <button class="skip-btn">Skip</button>
+        </td>
+
+      </tr>
+
+      <!-- ===================== DESK ===================== -->
+      <tr data-risk="3">
+
+        <td>Desk</td>
+
+        <td>
+          <img src="assets/images/products/desk.jpg" class="product-img">
+        </td>
+
+        <td>
+          Tiny room + study + no transport
+        </td>
+
+        <td>
+          Cheap desk or long-term comfort?
+        </td>
+
+        <td>
+          heavy?<br>
+          scratches?<br>
+          fits Uber?
+        </td>
+
+        <td>
+          🚨 Doesn’t fit transport<br>
+          ⚠️ Damage during move
+        </td>
+
+        <td>
+          “too easy”
+        </td>
+
+        <td>
+          Tram + walking
+        </td>
+
+        <td>
+          <input type="number" value="80" class="price-input">
+        </td>
+
+        <td>
+          <button onclick="buyItem(80,12)">Buy</button>
+          <button class="skip-btn">Skip</button>
+        </td>
+
+      </tr>
+
+      <!-- ===================== CHAIR ===================== -->
+      <tr data-risk="2">
+
+        <td>Office Chair</td>
+
+        <td>
+          <img src="assets/images/products/chair.jpg" class="product-img">
+        </td>
+
+        <td>
+          Back pain from studying after shifts
+        </td>
+
+        <td>
+          Cheap chair or proper support?
+        </td>
+
+        <td>
+          broken wheels?<br>
+          stains?<br>
+          adjustable?
+        </td>
+
+        <td>
+          🚨 Back pain worsens<br>
+          ⚠️ Chair collapses
+        </td>
+
+        <td>
+          “no worries”
+        </td>
+
+        <td>
+          Bus ride
+        </td>
+
+        <td>
+          <input type="number" value="45" class="price-input">
+        </td>
+
+        <td>
+          <button onclick="buyItem(45,8)">Buy</button>
+          <button class="skip-btn">Skip</button>
+        </td>
+
+      </tr>
+
+      <!-- ===================== FAN ===================== -->
+      <tr data-risk="1">
+
+        <td>Desk Fan</td>
+
+        <td>
+          <img src="assets/images/products/fan.jpg" class="product-img">
+        </td>
+
+        <td>
+          Hot room after butcher shifts
+        </td>
+
+        <td>
+          Cheap loud fan or quiet one?
+        </td>
+
+        <td>
+          noisy?<br>
+          dusty?<br>
+          strong?<br>
+          shaky?
+        </td>
+
+        <td>
+          🚨 Stops during heatwave<br>
+          ⚠️ Noise disturbs sleep
+        </td>
+
+        <td>
+          “too easy”
+        </td>
+
+        <td>
+          Tram ride
+        </td>
+
+        <td>
+          <input type="number" value="35" class="price-input">
+        </td>
+
+        <td>
+          <button onclick="buyItem(35,8)">Buy</button>
+          <button class="skip-btn">Skip</button>
+        </td>
+
+      </tr>
+
+    </table>
+  </div>
+
+</section>
+
+
+
+</section>
+
+<section class="chat-section">
+
+<h2>Messenger Simulation</h2>
+
+<div class="chat-box">
+
+<div class="seller-msg">
+  hey mate someone else looking rn
+</div>
+
+<div class="seller-msg">
+  can pick up tonight or nah?
+</div>
+
+<div class="student-options">
+
+<button class="chat-btn">
+  Can I come tomorrow morning?
+</button>
+
+<button class="chat-btn">
+  Is there any damage?
+</button>
+
+<button class="chat-btn">
+  Sorry I don’t have a car.
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="challenge-section">
+
+<h2>Emergency Problems</h2>
+
+<div class="challenge-grid">
+
+<div class="challenge-card">
+  🚨 Uber cost suddenly increased by $25 because of rain.
+</div>
+
+<div class="challenge-card">
+  🚨 Your roommate says the fridge is too noisy.
+</div>
+
+<div class="challenge-card">
+  🚨 Seller stopped replying after you transferred deposit.
+</div>
+
+<div class="challenge-card">
+  🚨 Chair doesn’t fit your desk height.
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
