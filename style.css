@@ -256,6 +256,10 @@ tbody tr:nth-child(even) {
 }
 
 .back-btn {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 100;
     width: fit-content;
     margin-bottom: 28px;
     padding: 12px 18px;

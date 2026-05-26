@@ -11,6 +11,8 @@
 
 <body>
 
+<a href="../index.html" class="back-btn">Back</a>
+
 <header class="topbar">
   <h1>Teacher Survival Guide</h1>
 
@@ -34,133 +36,131 @@
 
 </section>
 
+<section class="story-card">
+
+  <h2>Money & Budget</h2>
+
+  <p><strong>Student's Starting Budget:</strong> $47 remaining at start of shift</p>
+
+  <p><strong>Realistic Australian Convenience Store Prices:</strong></p>
+
+  <ul>
+    <li>Energy drink (Monster/V-Energy): $4.50–$6.50</li>
+    <li>Hot pie/sausage roll: $3.00–$5.50</li>
+    <li>Discounted meal (yellow sticker): $2.50–$4.50</li>
+    <li>Paracetamol/pain relief: $4.00–$8.00</li>
+    <li>Water bottle: $2.50–$4.00</li>
+    <li>Snack item (gum/chockies): $1.50–$3.00</li>
+    <li>Phone charger (cheap): $15–$25</li>
+    <li>Fast charger: $25–$40</li>
+    <li>Shopping bag (if charged): $0.15–$0.50</li>
+  </ul>
+
+  <p><strong>Smart Spending Goal:</strong> Student should spend $15–$25 maximum to leave enough for transport home and emergencies.</p>
+
+  <p><strong>Why Money Matters:</strong> Tired students make emotional purchases. The convenience store uses speed and pressure to trigger impulse buys. Every dollar wasted is money that can't be saved or used for actual needs.</p>
+
+</section>
+
 <section class="table-card">
 
   <h2>Teacher Roleplay Guide</h2>
 
-  <div class="table-wrapper">
+  <div class="table-scroll-controls">
+    <button class="scroll-btn" id="scrollLeft" onclick="scrollTableLeft()">← Left</button>
+    <button class="scroll-btn" id="scrollRight" onclick="scrollTableRight()">Right →</button>
+  </div>
+
+  <div class="table-wrapper" id="tableWrapper">
 
     <table>
 
       <tr>
         <th>Situation</th>
+        <th>Image</th>
         <th>Realistic Problem To Set Up</th>
-        <th>Emotional Pressure</th>
-        <th>Risk Clues</th>
-        <th>Possible Mistake</th>
-        <th>Smart Survival Move</th>
-        <th>Teacher Roleplay Prompt</th>
-        <th>Expected Next Step</th>
+        <th>Student Key Info</th>
+        <th>Teacher Acting Line</th>
       </tr>
 
       <tr>
         <td>Energy drink temptation</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Monster_Energy_Mega_can.jpg?width=240" alt="Energy drink"></td>
         <td>The student has just finished a late shift and picks up one energy drink. The cashier points to a promotion and encourages them to buy two.</td>
-        <td>Exhaustion after work</td>
-        <td>Convenience store pricing</td>
-        <td>Emotional spending</td>
-        <td>Buy only essentials and avoid emotional purchases when tired.</td>
-        <td>Say as cashier: "These are 2 for 8 bucks. Want to grab another one?"</td>
-        <td>Student politely refuses the deal and chooses only the needed item.</td>
-      </tr>
-
-      <tr>
-        <td>Fast cashier English</td>
-        <td>The line is long, the cashier speaks quickly, and the student hears several questions at once before they are ready.</td>
-        <td>Embarrassment</td>
-        <td>Long line behind you</td>
-        <td>Pretending to understand</td>
-        <td>Ask confidently when you do not understand.</td>
-        <td>Say quickly: "How ya going, need a bag mate, card or cash?" Then repeat at learner speed if needed.</td>
-        <td>Student asks for repetition and answers the question clearly.</td>
-      </tr>
-
-      <tr>
-        <td>Card declined</td>
-        <td>The student taps their card, the machine beeps, and the cashier says the payment did not work while other customers are waiting.</td>
-        <td>Public embarrassment</td>
-        <td>Low bank balance</td>
-        <td>Panic reaction</td>
-        <td>Stay calm and check your banking app carefully.</td>
-        <td>Say as cashier: "Sorry, it didn't go through."</td>
-        <td>Student stays calm, checks money, and asks to try again.</td>
+        <td><strong>Budget alert:</strong> One energy drink ($4.50–$6.50), not two. The deal is only smart if you actually need it.</td>
+        <td>Say as cashier: "These are two for eight bucks, mate. You're better off grabbing another one if you've had a big shift." If student hesitates: "Most people take the deal. It'll save you coming back later."</td>
       </tr>
 
       <tr>
         <td>Cheap hot food temptation</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Aussie_meat_pie.jpg?width=240" alt="Hot food pie"></td>
         <td>The student smells hot pies near the counter and has skipped dinner, but they already spent money on convenience food this week.</td>
-        <td>Extreme hunger</td>
-        <td>Daily overspending habit</td>
-        <td>Buying unhealthy food every shift</td>
-        <td>Think about your weekly budget, not only tonight.</td>
-        <td>Say as cashier: "Fresh pies mate, still hot. Want one?"</td>
-        <td>Student refuses without overexplaining and sticks to the budget.</td>
-      </tr>
-
-      <tr>
-        <td>Train arriving soon</td>
-        <td>The student needs to pay and leave quickly because the last useful train is coming soon, but they still need to check their items.</td>
-        <td>Panic and rushing</td>
-        <td>Time pressure</td>
-        <td>Forgetting important items</td>
-        <td>Slow down mentally before making decisions.</td>
-        <td>Say: "Last service soon. The train leaves in 4 minutes."</td>
-        <td>Student pays quickly, checks essentials, and leaves calmly.</td>
-      </tr>
-
-      <tr>
-        <td>Phone battery almost dead</td>
-        <td>The student's phone is almost flat, they need maps or a transport app, and the only charger nearby looks expensive.</td>
-        <td>Anxiety and isolation</td>
-        <td>No charger nearby</td>
-        <td>Panic buying expensive charger</td>
-        <td>Carry emergency charging equipment before shifts.</td>
-        <td>Say as staff: "Your battery's cooked? We've got chargers near the counter."</td>
-        <td>Student asks for the cheapest useful option and plans better next time.</td>
-      </tr>
-
-      <tr>
-        <td>Wrong item scanned twice</td>
-        <td>The total seems higher than expected. The student notices one snack may have scanned twice but feels nervous about speaking up.</td>
-        <td>Fear of confrontation</td>
-        <td>Total price looks too high</td>
-        <td>Paying silently</td>
-        <td>Always check receipts carefully before leaving.</td>
-        <td>Say as cashier: "That'll be $18.90." Then show that one item was scanned twice.</td>
-        <td>Student politely asks staff to check and correct the total.</td>
-      </tr>
-
-      <tr>
-        <td>Wallet missing</td>
-        <td>The student reaches for their wallet at the counter and cannot find it. They may need transport money and are starting to panic.</td>
-        <td>Shock and panic</td>
-        <td>Cannot pay for transport</td>
-        <td>Emotionally shutting down</td>
-        <td>Stay calm and retrace your recent movements carefully.</td>
-        <td>Say as staff: "You alright mate?"</td>
-        <td>Student explains the problem, retraces steps, and asks for practical help.</td>
+        <td><strong>Smart choice:</strong> Discount meal ($2.50–$4.50) + water ($2.50–$4.00) = filling, cheap, smart. Leaves $30+ for emergencies.</td>
+        <td>Say as cashier: "Fresh pies just came out, mate. Still hot. Want me to chuck one in for you?" If student says no: "You sure? Long night on an empty stomach is rough."</td>
       </tr>
 
       <tr>
         <td>Food expires tomorrow</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_sticker_bread_reduced_to_clear_in_Sainsbury%27s_supermarket_02.jpg?width=240" alt="Discount food expiring tomorrow"></td>
         <td>The student sees several discounted meals with yellow stickers, but the food expires tomorrow and they may not finish it all.</td>
-        <td>Pressure to buy discounted food</td>
-        <td>Large yellow markdown stickers</td>
-        <td>Buying too much unnecessary food</td>
-        <td>Only buy what you realistically can finish eating.</td>
-        <td>Say: "This one's reduced to clear. Pretty cheap today."</td>
-        <td>Student buys only what they can finish and avoids waste.</td>
+        <td><strong>Reality check:</strong> Yellow stickers = cheap + filling, BUT only if you eat by tomorrow. Question: "Can I realistically eat this?" Avoid waste.</td>
+        <td>Say as staff: "These meals are reduced to clear, pretty cheap tonight. You could grab a couple for tomorrow." If student worries about expiry: "Yeah, they expire tomorrow, but they're fine if you eat them quick."</td>
       </tr>
 
       <tr>
         <td>Unexpected medicine purchase</td>
-        <td>The student feels sick after work and buys medicine, but the label and staff instructions are difficult to understand quickly.</td>
-        <td>Feeling sick after work</td>
-        <td>Confusing medicine labels</td>
-        <td>Pretending to understand instructions</td>
-        <td>Ask staff clearly whenever health instructions are confusing.</td>
-        <td>Say as staff: "Take twice daily with food."</td>
-        <td>Student asks for clear instructions and repeats them back.</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Medicine_Bottles_IMG_9734.JPG?width=240" alt="Medicine bottle"></td>
+        <td>The student feels sick after work and wants paracetamol 500mg for a headache and sore throat. The label says 1-2 tablets every 4-6 hours, maximum 8 tablets in 24 hours. They must not take it with other cold and flu medicine that also contains paracetamol.</td>
+        <td><strong>Budget + safety:</strong> Medicine is essential, cost $4–$8. Ask staff about dose &amp; interactions. Don't guess with medicine. Never mix paracetamol products.</td>
+        <td>Say as staff: "This is paracetamol 500mg. Adults usually take one or two tablets every 4 to 6 hours, but don't take more than 8 in 24 hours. We also have cold and flu tablets if you want something stronger, but don't double up on paracetamol."</td>
+      </tr>
+
+      <tr>
+        <td>Fast cashier English</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Cashier_checking_out_a_customer%27s_purchases_at_the_Giant_Food_8c34868v.jpg?width=240" alt="Cashier counter"></td>
+        <td>The line is long, the cashier speaks quickly, and the student hears several questions at once before they are ready.</td>
+        <td><strong>Money saver:</strong> Cashier asks: "Any chockies, gum, or water?" Practice now: Say "No thanks." This alone saves $1.50–$3.00.</td>
+        <td>Say quickly: "How ya going, mate? Need a bag? Any chockies, gum, or water with that? Card or cash?" Then repeat at learner speed if needed.</td>
+      </tr>
+
+      <tr>
+        <td>Wrong item scanned twice</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Receipt.agr.jpg?width=240" alt="Receipt with duplicate scan"></td>
+        <td>The total seems higher than expected. The student notices one snack may have scanned twice but feels nervous about speaking up.</td>
+        <td><strong>Protect your budget:</strong> Always check receipt before leaving. Mistakes happen. Politely say: "Sorry, looks like that scanned twice?"</td>
+        <td>Say as cashier: "That'll be $18.90. Did you wanna add a bag or a water for the train?" Then, if student checks the total, show that one item scanned twice.</td>
+      </tr>
+
+      <tr>
+        <td>Card declined</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ingenico_iPP350_payment_terminal.jpg?width=240" alt="Declined bank card"></td>
+        <td>The student taps their card, the machine beeps, and the cashier says the payment did not work while other customers are waiting.</td>
+        <td><strong>Stay calm:</strong> Card decline happens. Don't panic or apologize excessively. Try again or use another payment method. Keep moving.</td>
+        <td>Say as cashier: "Sorry, it didn't go through. No dramas, wanna try again? Or you can tap another card if you've got one."</td>
+      </tr>
+
+      <tr>
+        <td>Wallet missing</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/WalletMpegMan.jpg?width=240" alt="Missing wallet"></td>
+        <td>The student reaches for their wallet at the counter and cannot find it. They may need transport money and are starting to panic.</td>
+        <td><strong>Survival mode:</strong> Separate emotion from action. Explain the problem clearly to staff. Check pockets, ask staff to hold items. Think: "Can I pay another way?"</td>
+        <td>Say as staff: "You alright, mate? Take a sec. Check your pockets and bag first." If they panic: "No stress, we can hold the stuff here for a minute."</td>
+      </tr>
+
+      <tr>
+        <td>Phone battery almost dead</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Charging_smartphone.jpg?width=240" alt="Low phone battery"></td>
+        <td>The student's phone is almost flat, they need maps or a transport app, and the only charger nearby looks expensive.</td>
+        <td><strong>Smart skip:</strong> Charger ($15–$40) is expensive here. Free charging at train stations. Ask for directions instead or use maps now before battery dies.</td>
+        <td>Say as staff: "Your battery's cooked? We've got chargers near the counter. The cheap one's twenty, but this fast charger is better if you need maps tonight."</td>
+      </tr>
+
+      <tr>
+        <td>Train arriving soon</td>
+        <td><img class="item-thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kuraby_train_arrives_Platform_1_Fortitude_Valley_Rail_Station_P1100607.jpg?width=240" alt="Train arriving"></td>
+        <td>The student needs to pay and leave quickly because the last useful train is coming soon, but they still need to check their items.</td>
+        <td><strong>Time crunch priority:</strong> Pay, check receipt, grab bag, leave. Even rushing, don't skip the receipt check. Rushing creates expensive mistakes.</td>
+        <td>Say as cashier: "You'll wanna head off soon. Last train's not far away. Want a bag so you can carry it quicker?"</td>
       </tr>
 
     </table>
@@ -169,11 +169,28 @@
 
 </section>
 
+<script>
+function scrollTableLeft() {
+  const wrapper = document.getElementById('tableWrapper');
+  wrapper.scrollBy({ left: -300, behavior: 'smooth' });
+}
+
+function scrollTableRight() {
+  const wrapper = document.getElementById('tableWrapper');
+  wrapper.scrollBy({ left: 300, behavior: 'smooth' });
+}
+</script>
+
 <section class="table-card">
 
   <h2>After Scenario Questions</h2>
 
-  <div class="table-wrapper">
+  <div class="table-scroll-controls">
+    <button class="scroll-btn" id="scrollLeft2" onclick="scrollTableLeft2()">← Left</button>
+    <button class="scroll-btn" id="scrollRight2" onclick="scrollTableRight2()">Right →</button>
+  </div>
+
+  <div class="table-wrapper" id="tableWrapper2">
 
     <table>
 
@@ -192,52 +209,10 @@
       </tr>
 
       <tr>
-        <td>Fast cashier English</td>
-        <td>What words did you understand first?</td>
-        <td>Students identify key words like bag, card, cash, and mate.</td>
-        <td>Remind them they do not need to understand every word to respond well.</td>
-      </tr>
-
-      <tr>
-        <td>Card declined</td>
-        <td>What can you say without panicking?</td>
-        <td>Students choose a calm response instead of freezing or apologising too much.</td>
-        <td>Practise keeping voice and body language steady.</td>
-      </tr>
-
-      <tr>
         <td>Cheap hot food temptation</td>
         <td>How can you say no politely?</td>
         <td>Students refuse the offer clearly without sounding rude.</td>
         <td>Point out that polite refusal is a useful survival skill.</td>
-      </tr>
-
-      <tr>
-        <td>Train arriving soon</td>
-        <td>What is your priority when time is short?</td>
-        <td>Students choose paying, checking essentials, and leaving on time.</td>
-        <td>Discuss how rushing creates small but expensive mistakes.</td>
-      </tr>
-
-      <tr>
-        <td>Phone battery almost dead</td>
-        <td>How do you avoid overspending in an emergency?</td>
-        <td>Students ask for the cheapest useful option and avoid panic buying.</td>
-        <td>Connect this to preparation before work shifts.</td>
-      </tr>
-
-      <tr>
-        <td>Wrong item scanned twice</td>
-        <td>How can you correct a mistake without sounding angry?</td>
-        <td>Students use a polite checking phrase instead of staying silent.</td>
-        <td>Reinforce that checking a receipt is normal, not rude.</td>
-      </tr>
-
-      <tr>
-        <td>Wallet missing</td>
-        <td>What information should you give first?</td>
-        <td>Students explain the problem simply before asking for help.</td>
-        <td>Separate emotion from the practical next step.</td>
       </tr>
 
       <tr>
@@ -249,12 +224,140 @@
 
       <tr>
         <td>Unexpected medicine purchase</td>
-        <td>What must you check before leaving?</td>
-        <td>Students ask about dosage, timing, food, and safety.</td>
-        <td>Health instructions are more important than speed or embarrassment.</td>
+        <td>What medicine details must you check before leaving?</td>
+        <td>Students ask about dose, how often to take it, maximum daily amount, whether it can be mixed with other medicine, and when to see a doctor.</td>
+        <td>Make students repeat: "1-2 tablets every 4-6 hours, maximum 8 tablets in 24 hours." Remind them not to guess with medicine.</td>
+      </tr>
+
+      <tr>
+        <td>Fast cashier English</td>
+        <td>What words did you understand first?</td>
+        <td>Students identify key words like bag, card, cash, and mate.</td>
+        <td>Remind them they do not need to understand every word to respond well.</td>
+      </tr>
+
+      <tr>
+        <td>Wrong item scanned twice</td>
+        <td>How can you correct a mistake without sounding angry?</td>
+        <td>Students use a polite checking phrase instead of staying silent.</td>
+        <td>Reinforce that checking a receipt is normal, not rude.</td>
+      </tr>
+
+      <tr>
+        <td>Card declined</td>
+        <td>What can you say without panicking?</td>
+        <td>Students choose a calm response instead of freezing or apologising too much.</td>
+        <td>Practise keeping voice and body language steady.</td>
+      </tr>
+
+      <tr>
+        <td>Wallet missing</td>
+        <td>What information should you give first?</td>
+        <td>Students explain the problem simply before asking for help.</td>
+        <td>Separate emotion from the practical next step.</td>
+      </tr>
+
+      <tr>
+        <td>Phone battery almost dead</td>
+        <td>How do you avoid overspending in an emergency?</td>
+        <td>Students ask for the cheapest useful option and avoid panic buying.</td>
+        <td>Connect this to preparation before work shifts.</td>
+      </tr>
+
+      <tr>
+        <td>Train arriving soon</td>
+        <td>What is your priority when time is short?</td>
+        <td>Students choose paying, checking essentials, and leaving on time.</td>
+        <td>Discuss how rushing creates small but expensive mistakes.</td>
       </tr>
 
     </table>
+
+  </div>
+
+</section>
+
+<script>
+function scrollTableLeft2() {
+  const wrapper = document.getElementById('tableWrapper2');
+  wrapper.scrollBy({ left: -300, behavior: 'smooth' });
+}
+
+function scrollTableRight2() {
+  const wrapper = document.getElementById('tableWrapper2');
+  wrapper.scrollBy({ left: 300, behavior: 'smooth' });
+}
+</script>
+
+<section class="story-card">
+
+  <h2>Aussie Slang Lines To Act Out</h2>
+
+  <p>
+    Use these lines naturally during the roleplay. Say them at normal speed first, then repeat slower if the student asks.
+  </p>
+
+  <div class="slang-grid">
+
+    <div class="slang-card">
+      <h3>Energy Drink Deal</h3>
+      <p class="slang-line">"These are two for eight bucks, mate. Wanna grab another one?"</p>
+      <p>Push line: "You're better off with the deal if you're working late again tomorrow."</p>
+    </div>
+
+    <div class="slang-card">
+      <h3>Hot Food Offer</h3>
+      <p class="slang-line">"Fresh pies just came out. Still hot if you're keen."</p>
+      <p>Push line: "You sure? It's a long trip home on an empty stomach."</p>
+    </div>
+
+    <div class="slang-card">
+      <h3>Discount Food</h3>
+      <p class="slang-line">"This one's reduced to clear, but you'll wanna eat it by tomorrow."</p>
+      <p>Push line: "Could be good for lunch tomorrow if you grab two."</p>
+    </div>
+
+    <div class="slang-card">
+      <h3>Medicine Help</h3>
+      <p class="slang-line">"No worries, I'll run you through it. Don't double up with cold and flu tablets."</p>
+      <p>Push line: "We do have stronger cold and flu ones, but check the ingredients first."</p>
+    </div>
+
+    <div class="slang-card">
+      <h3>Fast Checkout</h3>
+      <p class="slang-line">"How ya going? Need a bag, mate? Card or cash?"</p>
+      <p>Push line: "Any chockies, gum, or water with that?"</p>
+    </div>
+
+    <div class="slang-card">
+      <h3>Scanned Twice</h3>
+      <p class="slang-line">"Yeah, good catch. Looks like that one scanned twice."</p>
+      <p>Push line before correction: "Did you wanna add a bag or a water for the train?"</p>
+    </div>
+
+    <div class="slang-card">
+      <h3>Card Declined</h3>
+      <p class="slang-line">"Sorry, it didn't go through. No dramas, wanna try again?"</p>
+      <p>Push line: "You can tap another card if you've got one."</p>
+    </div>
+
+    <div class="slang-card">
+      <h3>Wallet Missing</h3>
+      <p class="slang-line">"You alright, mate? Take a sec and check your bag."</p>
+      <p>Support line: "No stress, we can hold the stuff here for a minute."</p>
+    </div>
+
+    <div class="slang-card">
+      <h3>Phone Battery</h3>
+      <p class="slang-line">"Your battery's cooked? Chargers are near the counter."</p>
+      <p>Push line: "The fast charger costs more, but it'll sort you out quicker."</p>
+    </div>
+
+    <div class="slang-card">
+      <h3>Train Pressure</h3>
+      <p class="slang-line">"You'll wanna head off soon. Last train's not far away."</p>
+      <p>Push line: "Want a bag so you can carry it quicker?"</p>
+    </div>
 
   </div>
 

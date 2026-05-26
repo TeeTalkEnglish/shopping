@@ -11,6 +11,35 @@ body{
   line-height:1.7;
 }
 
+.back-btn{
+  position:fixed;
+  top:16px;
+  left:16px;
+  z-index:100;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:42px;
+  padding:10px 16px;
+  background:white;
+  color:#102a43;
+  border:1px solid #dce6f2;
+  border-radius:999px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 4px 14px rgba(0,0,0,0.12);
+}
+
+.back-btn::before{
+  content:"<";
+  margin-right:8px;
+  font-weight:900;
+}
+
+.back-btn:hover{
+  background:#d9ecff;
+}
+
 /* TOPBAR */
 
 .topbar{
@@ -135,12 +164,35 @@ body{
 
 .table-wrapper{
   overflow-x:auto;
+  scroll-behavior:smooth;
+  border:1px solid #d9e2ec;
+  border-radius:14px;
+}
+
+.table-scroll-controls{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  margin-bottom:12px;
+}
+
+.scroll-btn{
+  min-width:48px;
+  min-height:42px;
+  padding:10px 14px;
+  border-radius:10px;
+}
+
+.scroll-btn:disabled{
+  background:#cbd5e1;
+  cursor:not-allowed;
+  transform:none;
 }
 
 table{
   width:100%;
   border-collapse:collapse;
-  min-width:1600px;
+  min-width:1720px;
   background:white;
 }
 
@@ -166,6 +218,18 @@ tr:nth-child(even){
 
 td{
   color:#243b53;
+}
+
+.item-thumb{
+  width:110px;
+  height:86px;
+  object-fit:cover;
+  display:block;
+  margin:auto;
+  background:#f8fbff;
+  border:1px solid #d9e2ec;
+  border-radius:14px;
+  padding:8px;
 }
 
 /* HIGHLIGHT IMPORTANT COLUMNS */
@@ -254,6 +318,37 @@ button:hover{
   border-radius:12px;
   color:#8a4b08;
   margin-top:20px;
+}
+
+/* TEACHER SLANG PRACTICE */
+
+.slang-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:16px;
+}
+
+.slang-card{
+  background:#f8fbff;
+  border:1px solid #d9e2ec;
+  border-radius:16px;
+  padding:18px;
+}
+
+.slang-card h3{
+  color:#102a43;
+  font-size:1.05rem;
+  margin-bottom:8px;
+}
+
+.slang-card p{
+  margin-bottom:8px;
+  color:#334e68;
+}
+
+.slang-line{
+  color:#102a43;
+  font-weight:bold;
 }
 
 /* RESPONSIVE */

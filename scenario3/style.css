@@ -16,6 +16,35 @@ body{
     line-height:1.6;
 }
 
+.back-btn{
+    position:fixed;
+    top:16px;
+    left:16px;
+    z-index:100;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:42px;
+    padding:10px 16px;
+    background:white;
+    color:#123b6d;
+    border:1px solid #cbd5e1;
+    border-radius:999px;
+    font-weight:bold;
+    text-decoration:none;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08);
+}
+
+.back-btn::before{
+    content:"<";
+    margin-right:8px;
+    font-weight:900;
+}
+
+.back-btn:hover{
+    background:#dbeafe;
+}
+
 .container{
     max-width:1500px;
     margin:auto;
